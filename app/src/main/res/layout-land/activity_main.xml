@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context="it.valeria.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_secure" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content2"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        >
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+
+        <RadioButton
+            android:id="@+id/checkyellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="@string/yellow"
+            android:textColor="#154"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            style="@style/MyRadioButtonStyle"
+            />
+
+        <RadioButton
+            android:id="@+id/checkred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="@string/red"
+            android:textColor="#154"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            style="@style/MyRadioButtonStyle"
+            />
+
+        <RadioButton
+            android:id="@+id/checkgreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="@string/green"
+            android:textColor="#154"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            style="@style/MyRadioButtonStyle"
+            />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
